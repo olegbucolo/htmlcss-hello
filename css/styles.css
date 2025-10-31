@@ -139,9 +139,6 @@ header h1::before {
     
 }
 
-.container-02{
-    /* background-color: var(--blue-01) */
-}
 
 .container-01 h2, .container-02 h2{
     position: absolute;
