@@ -47,7 +47,7 @@ header::before {
     bottom: -50vh;
     width: 100rem;
     height: 100rem;
-    background-image: url(/img/scultura-removebg-preview-no-sfondo.png);
+    background-image: url(../img/scultura-removebg-preview-no-sfondo.png);
     background-size: contain;
     background-repeat: no-repeat;
     filter: drop-shadow(1rem 1rem 1rem black);
@@ -89,7 +89,7 @@ header h1::before {
     transform: translateX(-50%);
     width: 8rem;
     height: 8rem;
-    background-image: url("/img/svg/museum-svgrepo-com.svg");
+    background-image: url(../img/svg/museum-svgrepo-com.svg);
     background-size: contain;
 }
 
@@ -198,7 +198,7 @@ header h1::before {
 }
 
 .grid-item-01{
-    background-image: url(/img/quadro.png);
+    background-image: url(../img/quadro.png);
     background-position: 50% 40%;
         box-shadow: 1rem 1rem 1rem 0rem black;
 
@@ -206,7 +206,7 @@ header h1::before {
 }
 
 .grid-item-02{
-    background-image: url(/img/scultura.png);
+    background-image: url(../img/scultura.png);
     background-position: 50% 0%;
     filter: contrast(60%);
     box-shadow: 1rem 1rem 1rem 0rem var(--red-04);
