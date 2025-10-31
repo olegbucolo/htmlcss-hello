@@ -1,5 +1,82 @@
-body *{
+html {
+    font-size: 10px;
+}
+
+html * {
     margin: 0;
     padding: 0;
     position: relative;
+    font-family: "Barlow Condensed", sans-serif;
+}
+
+:root {
+    --color-01: rgba(0, 247, 247, 1);
+    --color-02: rgba(0, 199, 199, 0.247);
+    --color-03: rgb(0, 142, 142);
+    --color-04: rgb(0, 44, 44);
+}
+
+header {
+   background-color: var(--color-02);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 0; /* create a stacking context */
+    overflow: hidden;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    left: -20rem;
+    bottom: -20rem;
+    width: 100rem;
+    height: 100rem;
+    background-image: url(/img/scultura-removebg-preview-no-sfondo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    filter: drop-shadow(1rem 1rem 1rem black);
+    z-index: -1;
+    opacity: .6;
+    filter:blur(4px);
+    animation: backgroundImage 3s linear infinite;;
+
+}
+
+@keyframes backgroundImage{
+    0%, 100%{ 
+        transform: translate(0, 0);
+    }
+    25%{
+        transform: translate(.5rem, .5rem);
+    }
+    50%{
+        transform: translate(0, 0);
+    }
+    75%{
+        transform: translate(-.5rem, -.5rem);
+    }
+}
+
+header h1 {
+    position: relative;
+    z-index: 2;
+    font-weight: 100;
+    font-size: 12rem;
+    color: var(--color-04);
+}
+
+header h1::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: -8rem;
+    transform: translateX(-50%);
+    width: 8rem;
+    height: 8rem;
+    background-image: url("/img/svg/museum-svgrepo-com.svg");
+    background-size: contain;
 }
