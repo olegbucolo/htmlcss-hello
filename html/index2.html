@@ -12,11 +12,18 @@
         <link rel="stylesheet" href="../css/styles.css" />
         <title>Una giornata al museo</title>
     </head>
-    <body>
+    <body id="top">
+        <nav ><ul>
+            <li><a href="#top">top</a></li>
+            <li><a href="#img1">img1</a></li>
+            <li><a href="#img2">img2</a></li>
+            <li><a href="#learn">learn</a></li>
+            <li><a href="#end">end</a></li>
+        </ul></nav>
         <header><h1>Una g<span class="i">l</span>ornata al museo</h1></header>
         <!-- Immagini con descrizione -->
         <section>
-            <div class="container-01">
+            <div id="img1" class="container-01">
                 <h2>1. Il dipinto che mi ha colpito di piu'</h2>
                 <div class="text-container-01">
                     <p>Un'opera d'arte affascinante vista nella galleria principale</p>
@@ -33,7 +40,7 @@
                 </div>
             </div>
 
-            <div class="container-02">
+            <div id="img2" class="container-02">
                 <h2>2. Un'antica scultura</h2>
                 <div class="grid-container grid-container-02">
                     <div class="grid-item-02" alt="Scultura romana in marmo esposta nella sala archeologica" ></div>
@@ -55,14 +62,16 @@
             </div>
         </section>
         <!-- Le cose che ho imparato oggi -->
-        <section>
-            <h3>Le cose che ho imparato oggi:</h3>
-            <ul>
-                <li>Le statue romane venivano spesso dipinte a colori vivaci</li>
-                <li>Molti dipinti nascondono simboli e significati nascosti</li>
-                <li>Ogni opera ha una toria unica</li>
-            </ul>
+        <section id="learn">
+            <div class="container-sec-02">
+                <h3>Le cose che ho imparato oggi:</h3>
+                <ul>
+                    <li>Le statue romane venivano spesso dipinte a colori vivaci</li>
+                    <li>Molti dipinti nascondono simboli e significati nascosti</li>
+                    <li>Ogni opera ha una toria unica</li>
+                </ul>
+            </div>
         </section>
-        <footer>&copy;<span> Insegnante di HTML</span></footer>
+        <footer id="end"><span></span>&copy; Insegnante di HTML</span></footer>
     </body>
 </html>
