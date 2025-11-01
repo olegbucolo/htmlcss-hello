@@ -306,6 +306,8 @@ nav ul{
 }
 
 nav ul li{
+    background-color: var(--red-04);
+
     height: 3rem;
     width: 5rem;
     display: flex;
